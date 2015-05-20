@@ -1,0 +1,5 @@
+#!/bin/sh
+cur=${PWD}
+export PATH=${cur}/go-v1.4.linux-amd64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin
+mkdir -p ${cur}/go-workspace
+GOPATH=${cur}/go-workspace GOROOT=${cur}/go-v1.4.linux-amd64 ${cur}/go-v1.4.linux-amd64/bin/go $@
